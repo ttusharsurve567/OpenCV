@@ -31,7 +31,7 @@ for (h,hashedPaths) in hashes.items():
             montage = None
             for p in hashedPaths:
                 image = cv2.imread(p)
-                image = cv2.resize(image, (150, 150))
+                image = cv2.resize(image, (350, 350))
                 if montage is None:
                     montage = image
                 else:
